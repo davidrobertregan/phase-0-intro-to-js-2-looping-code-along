@@ -1,13 +1,15 @@
-const names = ["Bill", "Ian", "Tom"];
-const events = ["surprise"]
+const names = [];
+const events = []
 
-function writeCards(names) {
-  let final = []
+function writeCards(names, events) {
+  let thankYou = []
     for (let i = 0; i < names.length; i++) {
-    final.push (`Thank you, ${names[i]}, for the wonderful ${events} gift!`);
+    thankYou.push(`Thank you, ${names[i]}, for the wonderful ${events} gift!`);
   }
-  return final
+  return thankYou
 }
+
+console.log(writeCards(['jon','dog', 'bill'], "Christmas"))
 
 let countdown = 10; 
 function countDown(countdown) {
